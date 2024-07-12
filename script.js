@@ -25,7 +25,7 @@ function convert() {
         warningEl.style.display = "none"
     }
 
-    if(inputValue !== '') {
+    if(inputValue !== '' && inputValue > 0) {
         let feetValue = (inputValue * meterToFeet).toFixed(3)
         let meterValue = (inputValue / meterToFeet).toFixed(3)
         lengthEl.innerHTML =  `<p id="length-el">${inputValue} meters = ${feetValue} feet | ${inputValue} feet = ${meterValue} meters</>`
