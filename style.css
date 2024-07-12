@@ -11,25 +11,24 @@
 }
 
 :root {
-    --bg-color: #eeeeee;
-    --primary-color: #6943ff;
-    --secondary-color: #f4f4f4; 
-    --input-border-color: #b295ff;
-    --card-color: #ffffff;
-    --contrast-color: #5a537b;
-    --paragraph-color: #353535;
-    --warning-color: #ff0000;
-
+  --bg-color: #eeeeee;
+  --primary-color: #6943ff;
+  --secondary-color: #f4f4f4;
+  --input-border-color: #b295ff;
+  --card-color: #ffffff;
+  --contrast-color: #5a537b;
+  --paragraph-color: #353535;
+  --warning-color: #ff0000;
 }
 
 :root.dark-mode {
-    --bg-color: #131922;
-    --primary-color: #3A4A6C;
-    --secondary-color: #1F2937;
-    --contrast-color: #CCC1FF;
-    --card-color: #273549;
-    --paragraph-color: #D1D5DB; 
-    --warning-color: #F87171;
+  --bg-color: #131922;
+  --primary-color: #3a4a6c;
+  --secondary-color: #1f2937;
+  --contrast-color: #ccc1ff;
+  --card-color: #273549;
+  --paragraph-color: #d1d5db;
+  --warning-color: #f87171;
 }
 
 body {
@@ -53,6 +52,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .title {
@@ -156,8 +156,8 @@ input[type="number"] {
 }
 
 #warning-el {
-    color: var(--warning-color);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
+  color: var(--warning-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
 }
