@@ -9,8 +9,10 @@ let lengthEl = document.getElementById("length-el")
 let volumeEl = document.getElementById("volume-el")
 let massEl = document.getElementById("mass-el")
 let warningEl = document.getElementById("warning-el")
+let darkModeBtn = document.getElementById("dark-mode-btn")
 
 convertBtn.addEventListener("click", convert)
+darkModeBtn.addEventListener("click", toggleDarkMode)
 
 function convert() {
     let inputValue = inputEl.value /* get user input */
@@ -39,11 +41,11 @@ function convert() {
 
 }   
 
-let darkModeBtn = document.getElementById("dark-mode-btn")
-darkModeBtn.addEventListener("click", toggleDarkMode)
+if(theme === 'dark') {
+    document.documentElement.classList.add('dark-mode');
+}
 
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode')
-    document.querySelector('.container-top').classList.toggle('dark-mode')
-    document.querySelector('.container-bottom').classList.toggle('dark-mode')
+    document.documentElement.classList.toggle('dark-mode');
+    let theme = document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
 }
