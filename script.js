@@ -39,3 +39,11 @@ function convert() {
 
 }   
 
+let darkModeBtn = document.getElementById("dark-mode-btn")
+darkModeBtn.addEventListener("click", toggleDarkMode)
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode')
+    document.querySelector('.container-top').classList.toggle('dark-mode')
+    document.querySelector('.container-bottom').classList.toggle('dark-mode')
+}

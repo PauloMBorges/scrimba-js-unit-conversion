@@ -6,6 +6,46 @@
   padding: 0;
 }
 
+
 #warning {
     display: none
 }
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+  
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.container-top,
+.container-bottom {
+    background-color: red;
+}
+  
+.container-top.dark-mode,
+.container-bottom.dark-mode {
+    background-color: blue;
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  header button svg {
+    width: 24px;
+    height: 24px;
+    fill: black;
+  }
+  
+  body.dark-mode header button svg {
+    fill: white;
+  }
