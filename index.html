@@ -13,22 +13,23 @@
     <div class="container">
         <div class="container-top">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <input type="number">
-            <button>Convert</button> 
+            <input id="input-el" type="number">
+            <button id="convert-btn">Convert</button> 
         </div>
         <div class="container-bottom">
             <div class="unit-container">
                 <h3>Length (Meter/Feet)</h3>
-                <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                <p id="length-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
             </div>
             <div class="unit-container">
                 <h3>Volume (Liters/Gallons)</h3>
-                <p>0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+                <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
             </div>
             <div class="unit-container">
                 <h3>Mass (Kilograms/Pounds)</h3>
-                <p>0 kilos = 0.000 pounds | 20 pounds = 0.000 kilos</p>
+                <p id="mass-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
             </div>
+            <p id="warning-el"></p>
         </div>
     </div>
     <script src="script.js"></script>
