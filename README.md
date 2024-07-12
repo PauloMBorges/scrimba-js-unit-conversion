@@ -1,9 +1,7 @@
 # Scrimba Unit Converter
 
 This project is a unit converter built as part of the [Scrimba's Learn JavaScript course](https://v2.scrimba.com/learn-javascript-c0v).
-It allows users to convert between MEtric and Imperial units for length, volume and mass.
-
-The password generator allows users to create strong, random passwords of variable length. The application is built using HTML, CSS, and JavaScript.
+It allows users to convert between Metric and Imperial units for length, volume and mass.
 
 ![Unit Converter Dark Screenshot](/unit-converter-dark.png)
 
